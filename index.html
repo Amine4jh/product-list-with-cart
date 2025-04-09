@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Product list with cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+    <div class="desserts">
+      <div class="heading">
+        <h1>Desserts</h1>
+      </div>
+      <div class="products">
+
+        <!-- === ITEMS === -->
+
+        <!-- <div class="item">
+          <div class="item-img item-1"></div>
+          <div class="add-button">
+            <img src="assets/images/icon-add-to-cart.svg">
+            <span>Add to Cart</span>
+          </div>
+          <div class="item-content">
+            <p id="category">Waffle</p>
+            <h4 id="name">Waffle with Berries</h4>
+            <span>$<span id="price">6.50</span></span>
+          </div>
+        </div> -->
+        
+      </div>
+    </div>
+    <div class="cart">
+      <h1>Your Cart (<span id="quantity">0</span>)</h1>
+      <div class="empty-cart">
+        <img src="assets/images/illustration-empty-cart.svg">
+        <p>Your added items will appear here</p>
+      </div>
+      <div class="full-cart">
+        <div class="produits">
+
+          <!-- === CART PRODUCTS === -->
+
+          <!-- <div class="product">
+            <div class="product-informations">
+              <h6>Classic Tiramisu</h6>
+              <span class="product-quantity">x2</span>
+              <span class="price-for-one">@ $5.50</span>
+              <span class="all-quantities-price">$11.00</span>
+            </div>
+            <img src="assets/images/icon-remove-item.svg">
+          </div> -->
+
+        </div>
+        <div class="important-actions">
+          <div class="order-total">
+            <p>Order Total</p>
+            <h4>$<span>00.00</span></h4>
+          </div>
+          <div class="carbon-delivery">
+            <img src="assets/images/icon-carbon-neutral.svg">
+            <p>This is a <b>carbon-neutral</b> delivery</p>
+          </div>
+          <button class="confirm">Confirm Order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal active-none">
+    <div class="modal-container">
+      <div class="modal-header">
+        <img src="assets/images/icon-order-confirmed.svg">
+        <h3>Order Confirmed</h3>
+        <p>We hope you enjoy your food!</p>
+      </div>
+      <div class="modal-content">
+        <div class="produits">
+
+    <!-- <div class="product">
+            <div class="modal-prod-info">
+              <div class="product-img"></div>
+              <div>
+                <h6>Classic Tiramisu</h6>
+                <span class="product-quantity">x2</span>
+                <span class="price-for-one">@ $5.50</span>
+              </div>
+            </div>
+            <span class="all-quantities-price">$11.00</span>
+          </div> -->
+
+        </div>
+        <div class="order-total">
+          <p>Order Total</p>
+          <h4>$<span>00.00</span></h4>
+        </div>
+      </div>
+      <button class="new-order">Start New Order</button>
+    </div>
+  </div>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>

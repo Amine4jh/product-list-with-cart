@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Text";
+}
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding-top: 50px;
+    background: hsl(20, 50%, 98%);
+}
+.heading h1{
+    margin-left: 10px;
+    font-weight: 700;
+    color: hsl(14, 65%, 9%);
+}
+.products{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.item{
+    margin: 20px 10px;
+}
+.item .item-img{
+    width: 250px;
+    height: 240px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid transparent;
+    border-radius: 15px;
+}
+.item .add-button{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: -20px auto 0 auto;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 25px;
+    border: 1px solid hsl(14, 65%, 9%);
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.item .add-button:hover{
+    border-color: hsl(14, 86%, 42%);
+    color: hsl(14, 86%, 42%);
+}
+
+/* When Click The "Add to Cart" Button */
+.add-clicked{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin: -20px auto 0 auto;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 25px;
+    border: 1px solid hsl(14, 86%, 42%);
+    background: hsl(14, 86%, 42%);
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.img-focus{
+    width: 250px;
+    height: 240px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid hsl(14, 86%, 42%);
+    border-radius: 15px;
+}
+
+/* Plus and Minus icon */
+.plus-minus{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+.plus-minus:hover{
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Product Details */
+.item-content{
+    margin-top: 20px;
+}
+.item-content #category{
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(7, 20%, 60%);
+    margin-bottom: 5px;
+}
+.item-content #name{
+    font-size: 16px;
+    font-weight: 600;
+    color: hsl(14, 65%, 9%);
+}
+.item-content span{
+    font-size: 16px;
+    font-weight: 600;
+    color: hsl(14, 86%, 42%);
+}
+
+.cart{
+    width: 25%;
+    margin-right: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+}
+.cart h1{
+    font-size: 24px;
+    color: hsl(14, 86%, 42%);
+}
+.empty-cart{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Full cart when adding a product */
+.full-cart{
+    display: none;
+    margin-top: 20px;
+}
+.product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1.5px solid hsl(13, 31%, 94%);
+    margin: 10px 0;
+    padding: 10px 0;
+}
+.product-informations{
+    margin: 0 5px;
+}
+.product-informations h6{
+    color: hsl(14, 65%, 9%);
+}
+.product-quantity{
+    font-weight: 600;
+    font-size: 14px;
+    color: hsl(14, 86%, 42%);
+}
+.price-for-one{
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0 5px;
+    color: hsl(7, 20%, 60%);
+}
+.all-quantities-price{
+    font-weight: 600;
+    font-size: 14px;
+    color: hsl(12, 20%, 44%);
+}
+.product img{
+    width: 20px;
+    border: 1.5px solid #CAAFA7;
+    border-radius: 50%;
+    padding: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.product img:hover{
+    background: hsl(13, 31%, 94%);
+    border-color: hsl(14, 65%, 9%);
+}
+.order-total{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 10px 0;
+}
+.order-total p{
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(14, 65%, 9%);
+}
+.order-total h4{
+    font-size: 24px;
+    color: hsl(14, 65%, 9%);
+}
+.carbon-delivery{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 30px;
+    background: hsl(13, 31%, 94%);
+    border-radius: 10px;
+}
+.carbon-delivery p{
+    font-size: 12px;
+    font-weight: 500;
+}
+.confirm{
+    width: 100%;
+    border: none;
+    outline: none;
+    margin: 20px 0;
+    padding: 10px 0;
+    border-radius: 10px;
+    background: hsl(14, 86%, 42%);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.confirm:hover{
+    background: hsl(10, 80%, 40%);
+}
+
+/* When adding something to the empty cart */
+.remove-empty-cart{
+    display: none;
+}
+.empty-cart p{
+    color: hsl(12, 20%, 44%);
+    font-size: 18px;
+    font-weight: 500;
+}
+.add-full-cart{
+    display: block;
+}
+
+/* Modal */
+.modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    
+}
+.modal-container{
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+}
+.modal-header img{
+    width: 40px;
+}
+.modal-header h3{
+    font-size: 26px;
+    font-weight: 700;
+    color: hsl(14, 65%, 9%);
+}
+.modal-header p{
+    padding: 0 3px;
+    font-size: 14px;
+    color: hsl(7, 20%, 60%);
+}
+.modal-content{
+    background: hsl(20, 50%, 98%);
+    padding: 0 15px;
+    border-radius: 10px;
+}
+.modal-prod-info{
+    display: flex;
+    align-items: center;
+}
+.product-img{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.new-order{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: hsl(14, 86%, 42%);
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+}
+.new-order:hover{
+    background: hsl(10, 80%, 40%);
+}
+.active-none{
+    display: none;
+}
+
+
+/* Media Querries */
+@media (max-width: 1070px) {
+    .products{
+        grid-template-columns: auto auto;
+    }
+    .cart{
+        width: 35%;
+        margin: 0;
+    }
+}
+@media (max-width: 800px) {
+    .products{
+        grid-template-columns: auto;
+    }
+    .cart{
+        width: 45%;
+    }
+}
+@media (max-width: 430px) {
+    .main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cart{
+        width: 80%;
+        height: auto;
+    }
+}
