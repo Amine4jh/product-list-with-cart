@@ -2,7 +2,7 @@
 
 ![alt text](image.png)
 
-A simple and responsive product listing page with a shopping cart, built using **HTML**, **CSS**, and **JavaScript**.
+A simple yet responsive product listing page with an integrated shopping cart, developed using **HTML**, **CSS**, and **JavaScript**. Users can browse products, add items to the cart, and view the updated total in real time. The layout adapts smoothly to different screen sizes, ensuring an optimal shopping experience across devices.
 
 ## 🚀 Features
 
