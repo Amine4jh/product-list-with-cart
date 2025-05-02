@@ -1,4 +1,4 @@
-import { data } from "./data.js";
+import { data } from "data.js";
 
 const productsContainer = document.querySelector(".desserts .products");
 const cartProducts = document.querySelector(".produits");
@@ -31,7 +31,7 @@ for (let i of data) {
   itemName.id = "name";
   itemPriceValue.id = "price";
   itemImage.style.backgroundImage = `url(${i.image.desktop})`;
-  addToCartIcon.src = "./assets/images/icon-add-to-cart.svg";
+  addToCartIcon.src = "assets/images/icon-add-to-cart.svg";
   addToCartTitle.innerText = "Add to Cart";
   itemCategory.innerText = i.category;
   itemName.innerText = i.name;
@@ -52,8 +52,8 @@ for (let i of data) {
   let quantity = document.createElement("span");
   let plusIcon = document.createElement("img");
   let minusIcon = document.createElement("img");
-  minusIcon.src = "/assets/images/icon-decrement-quantity.svg";
-  plusIcon.src = "/assets/images/icon-increment-quantity.svg";
+  minusIcon.src = "assets/images/icon-decrement-quantity.svg";
+  plusIcon.src = "assets/images/icon-increment-quantity.svg";
   minusIcon.classList.add("plus-minus");
   plusIcon.classList.add("plus-minus");
 
@@ -83,7 +83,7 @@ for (let i of data) {
   productQuantity.classList.add("product-quantity");
   productPrice.classList.add("price-for-one");
   productTotalPrice.classList.add("all-quantities-price");
-  cancelIcon.src = "/assets/images/icon-remove-item.svg";
+  cancelIcon.src = "assets/images/icon-remove-item.svg";
   productInformations.appendChild(productName);
   productInformations.appendChild(productQuantity);
   productInformations.appendChild(productPrice);
